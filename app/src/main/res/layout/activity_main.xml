@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Nombre"
+        app:layout_constraintEnd_toStartOf="@+id/etnombre"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="188dp"
+        android:text="Edad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etnombre"
+        android:layout_width="209dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="76dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:text="@string/etnombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etedad"
+        android:layout_width="206dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:hint="Edad"
+        android:inputType="phone"
+        android:text="@string/etedad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/etnombre" />
+
+    <EditText
+        android:id="@+id/etcelular"
+        android:layout_width="210dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="72dp"
+        android:ems="10"
+        android:hint="Celular"
+        android:inputType="phone"
+        android:text="@string/etcelular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etedad" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="diasVividos"
+        android:text="@string/btnCalcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etcelular"
+        app:layout_constraintVertical_bias="0.225"
+        tools:text="Calcular" />
+</androidx.constraintlayout.widget.ConstraintLayout>

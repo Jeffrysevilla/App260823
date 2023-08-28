@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">App260823</string>
+    <string name="etnombre"></string>
+    <string name="etedad"></string>
+    <string name="etcelular"></string>
+    <string name="btnCalcular">Calcular</string>
+</resources>
