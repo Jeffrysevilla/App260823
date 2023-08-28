@@ -59,15 +59,16 @@
 
     <EditText
         android:id="@+id/etcelular"
-        android:layout_width="210dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="72dp"
+        android:layout_width="192dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:hint="Celular"
         android:inputType="phone"
         android:text="@string/etcelular"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etedad" />
 
     <Button
@@ -78,9 +79,8 @@
         android:text="@string/btnCalcular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etcelular"
-        app:layout_constraintVertical_bias="0.225"
+        app:layout_constraintVertical_bias="0.218"
         tools:text="Calcular" />
 </androidx.constraintlayout.widget.ConstraintLayout>
